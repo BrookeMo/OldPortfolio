@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Short+Stack" rel="stylesheet">
     <!-- CSS Link -->
     <link rel="stylesheet" href="./assets/css/index.css">
     <title>Brooke Amy Mortensen</title>
@@ -17,8 +18,12 @@
 <body>
     <!--Header-->
     <div class="row header">
-        <div class "col s6"></div>
-        <div class="col s6 offset-s6">
+        <div class="col s6">
+            <p class="logo">
+                {bm}
+            </p>
+        </div>
+        <div class="col s6">
             <a class="btn-flat contact">
                 <img id="bubble" src="./assets/images/speechBubble.png" height=60px width=60px>
             </a>
@@ -42,12 +47,34 @@
                             </div>
                         </div>
                     </div>
-                    <div id="picContainer" class="col s6 offset-s3">
-                            <img id="profilePic" src="./assets/images/ProfilePicture.jpg">
+                    <div id="picContainer" class="col s6">
+                        <img id="profilePic" src="./assets/images/ProfilePicture.jpg">
+                    </div>
+                    <div id="info" class="card-panel col s6">
+                        <p id="myInfo">I like to code beautiful, simple, clean things, using frontend technologies.</p>
                     </div>
                 </div>
             </div>
+            <div id="compRow" class="row">
+                <div class="col s12 computer">
+                    <img id="computer" src="./assets/images/code.png">
+                </div>
+            </div>
         </div>
+        <div class="row">
+            <div id="aboutMe" class="col s12">
+                <div class="card-panel sample">
+                    <h3>About Me</h3>
+                    <p>After tip-toeing around computer programming for a couple of years, I finally decided
+                        to take the plunge, and immersed myself in frontend development, learning the newest
+                        languages and technologies. I've developed a passion for making user-friendly, clean, 
+                        and fun applications. I'm consistently looking for new things to try and fun ideas to
+                        implement.
+                    </p>
+                </div>
+            </div>
+        </div>
+
     </div>
 </body>
 

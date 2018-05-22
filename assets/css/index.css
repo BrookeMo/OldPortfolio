@@ -6,7 +6,7 @@ body {
 }
 .header {
     padding: 5px 0px 8px 0px;
-    background-color: #26547C;
+    background-color: #011627;
     margin: 0;
 }
 .title {
@@ -17,7 +17,7 @@ body {
 }
 .contact {
     float: right;
-    background-color: #26547C;
+    background-color: #011627;
     height: 65px;
     width: 65px;
     padding: 0;
@@ -27,7 +27,7 @@ body {
     margin-top: 2px;
 }
 .name {
-    color: #26547C;
+    color: #011627;
     text-align: center;
     margin: 0;
 }
@@ -35,10 +35,12 @@ body {
     padding: 0;
 }
 #profilePic {
-    height: 136px;
+    height: 200px;
+    box-shadow: 0 14px 14px 0 rgba(0,0,0,0.14), 0px 20px 20px 10px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    border-radius: 2px;
 }
 hr {
-    color: #26547C;
+    color: #011627;
     size: 5px;
 }
 .title {
@@ -54,4 +56,41 @@ hr {
 }
 #titleRow {
     margin-bottom: 0;
+}
+.logo {
+    color: white;
+    font-family: 'Short Stack', cursive;
+    font-size: 25px;
+    margin: 0;
+}
+#info {
+    box-shadow: 0 14px 14px 0 rgba(0,0,0,0.14), 0px 20px 20px 10px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    margin-top: 0;
+    height: 200px;
+}
+#myInfo {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.computer {
+    height: 190px;
+}
+#computer {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#compRow {
+    margin-bottom: 0;
+}
+.sample {
+    margin-top: 0;
+    background-color: #5C723A;
+    color: white;
+    text-align: center;
+    box-shadow: 0 14px 14px 0 rgba(0,0,0,0.14), 0px 20px 20px 10px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+#aboutMe {
+    padding: 0;
 }
