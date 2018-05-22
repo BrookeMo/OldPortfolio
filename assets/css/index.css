@@ -94,3 +94,16 @@ hr {
 #aboutMe {
     padding: 0;
 }
+.portfolio {
+    color: #5C723A;
+    text-align: center;
+}
+.project {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    box-shadow: 0 14px 14px 0 rgba(0,0,0,0.14), 0px 20px 20px 10px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    border-radius: 2px;
+
+}
