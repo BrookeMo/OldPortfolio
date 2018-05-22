@@ -28,16 +28,14 @@ body {
 }
 .name {
     color: #26547C;
+    text-align: center;
     margin: 0;
 }
 #picContainer {
     padding: 0;
 }
 #profilePic {
-
-}
-#nameContainer {
-    margin-top: 20px;
+    height: 136px;
 }
 hr {
     color: #26547C;
@@ -46,4 +44,14 @@ hr {
 .title {
     text-align: center;
     color: black;
+    margin: 10px 0 0 0;
+}
+#nameRow {
+    margin-top: 5px;
+}
+#Card {
+    box-shadow: 0 14px 14px 0 rgba(0,0,0,0.14), 0px 20px 20px 10px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+#titleRow {
+    margin-bottom: 0;
 }
