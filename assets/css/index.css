@@ -10,18 +10,25 @@ body {
 main {
     flex: 1 0 auto;
 }
-#nav-mobile {
-    padding: 0;
-}
-.title {
-    font-family: 'Comfortaa', cursive;
-    font-size: 20px;
-    text-align: center;
-    color: #5C723A;
-    margin: 10px 0 0 0;
-}
+/* ======================================================================================== */
+/* Navigation Styling */
+/* ======================================================================================== */
 .nav-wrapper {
     background-color: #474747;
+    box-shadow: 0 14px 14px 0 rgba(0,0,0,0.14), 0px 20px 20px 10px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+.logo {
+    color: white;
+    font-family: 'Short Stack', cursive;
+    font-size: 25px;
+    margin: 0;
+}
+@media only screen and (min-width: 993px) {
+    /*adding a margin to the logo for aesthetics */
+    .logo {margin-left: 10px;}
+}
+#nav-mobile {
+    padding: 0;
 }
 .sidenav {
     width: 150px;
@@ -31,31 +38,36 @@ main {
     text-align: center;
     color: white;
 }
+/* ======================================================================================== */
+/* Title Styling */
+/* ======================================================================================== */
+#nameRow {
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
 .name {
     color: #2D3C4B;
     text-align: center;
     margin: 0;
 }
-#picContainer {
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto;
-}
-#profilePic {
-    height: 200px;
-    box-shadow: 0 14px 14px 0 rgba(0,0,0,0.14), 0px 20px 20px 10px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
-    border-radius: 50%;
-    display: block;
-    margin: auto;
-}
 hr {
-    color: #2D3C4B;
-    size: 5px;
+    border: #2D3C4B 2px solid;
+}
+#titleRow {
+    margin-bottom: 20px;
+}
+.title {
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    text-align: center;
+    color: #5C723A;
+    margin: 10px 0 0 0;
 }
 #location {
     display: block;
     text-align: center;
     margin-top: 0;
+    margin-bottom: 10px;
 }
 i.small.material-icons {
     margin-top: 5px;
@@ -68,51 +80,149 @@ i.small.material-icons {
     vertical-align: text-top;
     color: #A24936;
 }
-#nameRow {
-    margin-top: 5px;
+/* ======================================================================================== */
+/* Picture Styling */
+/* ======================================================================================== */
+#picContainer {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    position: relative;
+    height: 200px;
+    border-radius: 50%;
 }
-#Card {
+#profilePic {
+    height: 200px;
     box-shadow: 0 14px 14px 0 rgba(0,0,0,0.14), 0px 20px 20px 10px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    border-radius: 50%;
+    display: block;
+    margin: auto;
 }
-#titleRow {
+.image {
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.imageHover {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+#picContainer:hover .image {
+    opacity: 0.3;
+}
+#picContainer:hover .imageHover {
+    opacity: 1;
+}
+.hoverText {
+    color: #1C3144;
+    font-size: 10px;
+    margin-top: 10px;
+}
+/* ======================================================================================== */
+/* About Me */
+/* ======================================================================================== */
+#compRow {
     margin-bottom: 0;
 }
-.logo {
-    color: white;
-    font-family: 'Short Stack', cursive;
-    font-size: 25px;
-    margin: 0 0 0 10px;
-}
-#info {
-    box-shadow: 0 14px 14px 0 rgba(0,0,0,0.14), 0px 20px 20px 10px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
-    margin-top: 0;
-    height: 200px;
-}
-#myInfo {
-    margin-top: 24px;
-    margin-bottom: 24px;
-}
-.computer {
+.icon {
     height: 190px;
 }
-#computer {
+#icon {
     width: 200px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-#compRow {
-    margin-bottom: 0;
+#aboutme {
+    padding: 0;
 }
-.sample {
+.aboutme {
     margin-top: 0;
     background-color: #5C723A;
     color: white;
     text-align: center;
     box-shadow: 0 14px 14px 0 rgba(0,0,0,0.14), 0px 20px 20px 10px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
 }
-#aboutme {
+.showResume {
+    background-color: white;
+    color: #5C723A;
+    text-align: center;
+    padding: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 170px;
+    box-shadow: 0 14px 14px 0 rgba(0,0,0,0.14), 0px 20px 20px 10px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    border-radius: 20px;
+    border: #5C723A solid;
+    text-transform: none;
+    height: 45px;
+    line-height: 21px;
+}
+.showResume:hover {
+    background-color: #5C723A;
+    color: white;
+}
+#resume {
+    display: none;
+    width: 100%;
+    height: 600px;
+}
+/* ======================================================================================== */
+/* Skills */
+/* ======================================================================================== */
+#keyboardRow {
+    margin-bottom: 0;
+}
+#mySkills {
     padding: 0;
+}
+.skills {
+    margin-top: 0;
+    padding-bottom: 5px;
+    background-color: #2D3C4B;
+    color: white;
+    text-align: center;
+    box-shadow: 0 14px 14px 0 rgba(0,0,0,0.14), 0px 20px 20px 10px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+.skillsTitle {
+    margin-bottom: 0;
+}
+.showPortfolio {
+    background-color: white;
+    color: #1C3144;
+    text-align: center;
+    padding: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 130px;
+    box-shadow: 0 14px 14px 0 rgba(0,0,0,0.14), 0px 20px 20px 10px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    border-radius: 20px;
+    border: #1C3144 solid;
+    text-transform: none;
+    height: 45px;
+    line-height: 21px;
+}
+.showPortfolio:hover {
+    background-color: #1C3144;
+    color: white;
+}
+.myPortfolio {
+    display: none;
 }
 .portfolio {
     color: #2D3C4B;
@@ -121,23 +231,10 @@ i.small.material-icons {
     margin-bottom: 30px;
 }
 .projectImage {
-     position: relative;
-     width: 250px;
-     margin-left: auto;
-     margin-right: auto;
-}
-.project {
-    display: block;
-    width: 100%;
-    height: auto;
+    position: relative;
+    width: 250px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
-    box-shadow: 0 14px 14px 0 rgba(0,0,0,0.14), 0px 20px 20px 10px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
-    border-radius: 10px;
-    opacity: 1;
-    transition: .5s ease;
-    backface-visibility: hidden;
 }
 .overlay {
     position: absolute;
@@ -151,9 +248,22 @@ i.small.material-icons {
     transition: .5s ease;
     background-color: #2D3C4B;
     border-radius: 10px;
-  }
+}
 .projectImage:hover .overlay{
     opacity: 1;
+}
+.project {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    box-shadow: 0 14px 14px 0 rgba(0,0,0,0.14), 0px 20px 20px 10px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 .projectText {
     color: white;
@@ -202,19 +312,11 @@ i.small.material-icons {
     background-color: #1C3144;
     color: white;
 }
-#mySkills {
+/* ======================================================================================== */
+/* Contact */
+/* ======================================================================================== */
+#contactMe {
     padding: 0;
-}
-.skills {
-    margin-top: 0;
-    padding-bottom: 5px;
-    background-color: #2D3C4B;
-    color: white;
-    text-align: center;
-    box-shadow: 0 14px 14px 0 rgba(0,0,0,0.14), 0px 20px 20px 10px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
-}
-.skillsTitle {
-    margin-bottom: 0;
 }
 .contactInfo {
     margin-top: 0;
@@ -223,33 +325,8 @@ i.small.material-icons {
     text-align: center;
     box-shadow: 0 14px 14px 0 rgba(0,0,0,0.14), 0px 20px 20px 10px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
 }
-#contactMe {
-    padding: 0;
-}
-.showPortfolio {
-    background-color: white;
-    color: #1C3144;
-    text-align: center;
-    padding: 10px;
-    margin-top: 0;
+#contactRow {
     margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 130px;
-    box-shadow: 0 14px 14px 0 rgba(0,0,0,0.14), 0px 20px 20px 10px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
-    border-radius: 20px;
-    border: #1C3144 solid;
-    text-transform: none;
-    height: 45px;
-    line-height: 21px;
-}
-.showPortfolio:hover {
-    background-color: #1C3144;
-    color: white;
-}
-.myPortfolio {
-    display: none;
 }
 #phoneNumber {
     display: none;
@@ -268,21 +345,6 @@ i.small.material-icons#phone {
     vertical-align: text-top;
     color: white;
 }
-#contactRow {
-    margin-bottom: 0;
-}
-#copyright {
-    text-align: center;
-    background-color: #474747;
-    margin-top: 0;
-}
-#footer-copyright {
-    background-color: #474747;
-    padding-top: 0;
-}
-#page-footer {
-    background-color: #474747;
-}
 #form {
     margin-bottom: 15px;
     display: none;
@@ -293,6 +355,31 @@ i.small.material-icons#phone {
 }
 #myEmail {
     margin-top: 0;
+}
+.prefix {
+    color: #A24936;
+}
+.input-field.prefix.active {
+      color: black;
+}
+/* label color */
+.input-field label {
+    color: #A24936;
+}
+/* label focus color */
+.input-field input[type=text]:not(.browser-default):focus:not([read-only]) + label {
+    color: #A24936;
+}
+.input-field input[type=email]:not(.browser-default):focus:not([read-only]) + label {
+    color: #A24936;
+}
+textarea.materialize-textarea:focus:not([read-only]) + label {
+    color: #A24936;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #A24936;
+    box-shadow: 0 1px 0 0 #A24936;
 }
 #submit {
     font-family: 'Comfortaa', cursive;
@@ -319,88 +406,18 @@ i.small.material-icons#phone {
     background-color: #A24936;
     color: white;
 }
-/* label color */
-.input-field label {
-    color: #A24936;
-  }
-  /* label focus color */
-  .input-field input[type=text]:not(.browser-default):focus:not([read-only]) + label {
-    color: #A24936;
-  }
-  .input-field input[type=email]:not(.browser-default):focus:not([read-only]) + label {
-    color: #A24936;
-  }
-textarea.materialize-textarea:focus:not([read-only]) + label {
-    color: #A24936;
+/* ======================================================================================== */
+/* Footer */
+/* ======================================================================================== */
+#page-footer {
+    background-color: #474747;
 }
-  /* label underline focus color */
-  .input-field input[type=text]:focus {
-    border-bottom: 1px solid #A24936;
-    box-shadow: 0 1px 0 0 #A24936;
-  }
-  .prefix {
-    color: #A24936;
-  }
-.input-field.prefix.active {
-      color: black;
-  }
-#picContainer {
-    position: relative;
-    height: 200px;
-    border-radius: 50%;
+#footer-copyright {
+    background-color: #474747;
+    padding-top: 0;
 }
-.image {
-    opacity: 1;
-    display: block;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-  }
-  .imageHover {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+#copyright {
     text-align: center;
-  }
-  #picContainer:hover .image {
-    opacity: 0.3;
-  }
-  #picContainer:hover .imageHover {
-    opacity: 1;
-  }
-.hoverText {
-    color: #1C3144;
-    font-size: 10px;
-    margin-top: 10px;
-}
-#resume {
-    display: none;
-    width: 100%;
-    height: 600px;
-}
-.showResume {
-    background-color: white;
-    color: #5C723A;
-    text-align: center;
-    padding: 10px;
+    background-color: #474747;
     margin-top: 0;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 170px;
-    box-shadow: 0 14px 14px 0 rgba(0,0,0,0.14), 0px 20px 20px 10px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
-    border-radius: 20px;
-    border: #5C723A solid;
-    text-transform: none;
-    height: 45px;
-    line-height: 21px;
-}
-.showResume:hover {
-    background-color: #5C723A;
-    color: white;
 }
