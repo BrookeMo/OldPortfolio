@@ -6,6 +6,9 @@ $(document).ready(function () {
     $("#show").click(function () {
         $(".myPortfolio").toggle();
     });
+    $("#resumeButton").click(function () {
+        $("#resume").toggle();
+    });
     $("#textIcon").click(function () {
         $("#phoneNumber").toggle();
     });
