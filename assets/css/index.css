@@ -199,6 +199,9 @@ i.small.material-icons {
 .skillsTitle {
     margin-bottom: 0;
 }
+.skillsSection {
+    font-size: 1.35rem;
+}
 #skillshr {
     border: white 1px groove;
 }
