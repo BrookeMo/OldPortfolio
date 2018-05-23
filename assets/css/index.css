@@ -21,13 +21,13 @@ main {
     margin: 10px 0 0 0;
 }
 .nav-wrapper {
-    background-color: #2D3C4B;
+    background-color: #474747;
 }
 .sidenav {
     width: 150px;
 }
 #sidenavLogo {
-    background-color: #2D3C4B;
+    background-color: #474747;
     text-align: center;
     color: white;
 }
@@ -273,15 +273,15 @@ i.small.material-icons#phone {
 }
 #copyright {
     text-align: center;
-    background-color: #1C3144;
+    background-color: #474747;
     margin-top: 0;
 }
 #footer-copyright {
-    background-color: #1C3144;
+    background-color: #474747;
     padding-top: 0;
 }
 #page-footer {
-    background-color: #1C3144;
+    background-color: #474747;
 }
 #form {
     margin-bottom: 15px;
