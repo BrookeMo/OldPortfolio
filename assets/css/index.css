@@ -2,7 +2,7 @@
     font-family: 'Comfortaa', cursive;
 }
 body {
-    background-image: url(../images/YellowBackground.png);
+    background-image: url(../images/country-quilt.png);
 }
 .header {
     padding: 5px 0px 8px 0px;
@@ -95,8 +95,10 @@ hr {
     padding: 0;
 }
 .portfolio {
-    color: #5C723A;
+    color: #2D3C4B;
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 .projectImage {
      position: relative;
@@ -127,7 +129,7 @@ hr {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #1C3144;
+    background-color: #2D3C4B;
     border-radius: 10px;
   }
 .projectImage:hover .overlay{
@@ -156,7 +158,7 @@ hr {
     margin-right: auto;
     display: block;
     border-radius: 20px;
-    border: #5C723A solid;
+    border: white solid;
 }
 .githubLink {
     background-color: white;
@@ -187,6 +189,6 @@ hr {
     text-align: center;
     box-shadow: 0 14px 14px 0 rgba(0,0,0,0.14), 0px 20px 20px 10px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
 }
-#lang {
-    margin-bottom: 40px;
+.skillsTitle {
+    margin-bottom: 0;
 }
