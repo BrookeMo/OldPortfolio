@@ -6,9 +6,10 @@ body {
 }
 .title {
     font-family: 'Comfortaa', cursive;
-    color: white;
-    text-align: center;
     font-size: 20px;
+    text-align: center;
+    color: #5C723A;
+    margin: 10px 0 0 0;
 }
 .nav-wrapper {
     background-color: #2D3C4B;
@@ -42,10 +43,21 @@ hr {
     color: #2D3C4B;
     size: 5px;
 }
-.title {
+#location {
+    display: block;
     text-align: center;
-    color: black;
-    margin: 10px 0 0 0;
+    margin-top: 0;
+}
+i.small.material-icons {
+    margin-top: 5px;
+    color: #A24936;
+}
+#slc {
+    margin-top: -5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    vertical-align: text-top;
+    color: #A24936;
 }
 #nameRow {
     margin-top: 5px;
@@ -161,7 +173,7 @@ hr {
 }
 .githubLink {
     background-color: white;
-    color: #5C723A;
+    color: #1C3144;
     text-align: center;
     padding: 10px;
     margin-top: 25px;
@@ -172,10 +184,13 @@ hr {
     width: 220px;
     box-shadow: 0 14px 14px 0 rgba(0,0,0,0.14), 0px 20px 20px 10px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
     border-radius: 20px;
-    border: #5C723A solid;
+    border: #1C3144 solid;
+    text-transform: none;
+    height: 45px;
+    line-height: 21px;
 }
 .githubLink:hover {
-    background-color: #5C723A;
+    background-color: #1C3144;
     color: white;
 }
 #mySkills {
@@ -183,6 +198,7 @@ hr {
 }
 .skills {
     margin-top: 0;
+    padding-bottom: 5px;
     background-color: #2D3C4B;
     color: white;
     text-align: center;
@@ -200,4 +216,48 @@ hr {
 }
 #contactMe {
     padding: 0;
+}
+.showPortfolio {
+    background-color: white;
+    color: #1C3144;
+    text-align: center;
+    padding: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 130px;
+    box-shadow: 0 14px 14px 0 rgba(0,0,0,0.14), 0px 20px 20px 10px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    border-radius: 20px;
+    border: #1C3144 solid;
+    text-transform: none;
+    height: 45px;
+    line-height: 21px;
+}
+.showPortfolio:hover {
+    background-color: #1C3144;
+    color: white;
+}
+.myPortfolio {
+    display: none;
+}
+#phoneNumber {
+    display: none;
+    text-align: center;
+    margin-top: 0;
+}
+i.small.material-icons#phone {
+    margin: 0;
+    color: white;
+}
+#number {
+    margin-top: -5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    vertical-align: text-top;
+    color: white;
+}
+#contactRow {
+    margin-bottom: 0;
 }

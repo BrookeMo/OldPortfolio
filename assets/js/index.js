@@ -1,4 +1,8 @@
-$(document).ready(function(){
+$(document).ready(function () {
     $('.sidenav').sidenav();
     $('.scrollspy').scrollSpy();
-  });
+    $("#show").click(function () {
+        $(".myPortfolio").toggle();
+    });
+});
+
