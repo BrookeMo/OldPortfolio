@@ -200,7 +200,8 @@ i.small.material-icons {
     margin-bottom: 0;
 }
 .skillsSection {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
+    text-align: center;
 }
 #skillshr {
     border: white 1px groove;
