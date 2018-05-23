@@ -10,25 +10,47 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Short+Stack" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- CSS Link -->
     <link rel="stylesheet" href="./assets/css/index.css">
+    <!-- Javascript Links -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="./assets/js/index.js"></script>
     <title>Brooke Amy Mortensen</title>
 </head>
 
 <body>
     <!--Header-->
-    <div class="row header">
-        <div class="col s6">
-            <p class="logo">
-                {bm}
-            </p>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo logo">{bm}</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li>
+                    <a href="#">About Me</a>
+                </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
         </div>
-        <div class="col s6">
-            <a class="btn-flat contact">
-                <img id="bubble" src="./assets/images/speechBubble.png" height=60px width=60px>
-            </a>
-        </div>
-    </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#" id="sidenavLogo" class="brand-logo logo">{bm}</a></li>
+        <li>
+            <a href="#">About Me</a>
+        </li>
+        <li>
+            <a href="#">Portfolio</a>
+        </li>
+        <li>
+            <a href="#">Contact</a>
+        </li>
+    </ul>
     <!--Body-->
     <div class="body">
         <div class='container'>
@@ -47,11 +69,8 @@
                             </div>
                         </div>
                     </div>
-                    <div id="picContainer" class="col s6">
+                    <div id="picContainer" class="col s12">
                         <img id="profilePic" src="./assets/images/ProfilePicture.jpg">
-                    </div>
-                    <div id="info" class="card-panel col s6">
-                        <p id="myInfo">I like to code beautiful, simple, clean things, using frontend technologies.</p>
                     </div>
                 </div>
             </div>
@@ -144,7 +163,7 @@
             <div id="contactMe" class="col s12">
                 <div class="card-panel contactInfo">
                     <h3>Contact Me</h3>
-                    <p>Feel like learning more, or collaborating?</p>
+                    <p>Feel like learning more, collaborating, or just want to get in touch?</p>
                     <div class="row">
                         <div class="col s2">
                             <a href="https://github.com/BrookeMo" target="_blank">
@@ -181,58 +200,58 @@
             </div>
         </div>
         <div class="container">
-                <div class="row">
-                    <div class="col s12">
-                        <h3 class='portfolio'>Portfolio</h3>
-                        <div class="projectImage">
-                            <img class="project" src="./assets/images/SK8.png">
-                            <div class=overlay>
-                                <div class="projectText">
-                                    App for skateboarders to post and see tricks performed in their area
-                                    <a class="projectLink" href="https://stark-savannah-69359.herokuapp.com/" target="_blank">Check it out ></a>
-                                </div>
+            <div class="row">
+                <div class="col s12">
+                    <h3 class='portfolio'>Portfolio</h3>
+                    <div class="projectImage">
+                        <img class="project" src="./assets/images/SK8.png">
+                        <div class=overlay>
+                            <div class="projectText">
+                                App for skateboarders to post and see tricks performed in their area
+                                <a class="projectLink" href="https://stark-savannah-69359.herokuapp.com/" target="_blank">Check it out ></a>
                             </div>
                         </div>
-                        <div class="projectImage">
-                            <img class="project" src="./assets/images/AvengersAssembler.png">
-                            <div class=overlay>
-                                <div class="projectText">
-                                    Website for new Avengers fans to learn more about their favorite characters.
-                                    <a class="projectLink" href="https://brookemo.github.io/AvengersAssembler/" target="_blank">Check it out ></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="projectImage">
-                            <img class="project" src="./assets/images/StarWars.png">
-                            <div class=overlay>
-                                <div class="projectText">
-                                    Star Wars Themed Hangman Game
-                                    <a class="projectLink" href="https://brookemo.github.io/HangmanGame/" target="_blank">Check it out ></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="projectImage">
-                            <img class="project" src="./assets/images/TrainScheduler.png">
-                            <div class=overlay>
-                                <div class="projectText">
-                                    A train schedule app that uses Firebase.
-                                    <a class="projectLink" href="https://brookemo.github.io/FirebaseTrainScheduler/" target="_blank">Check it out ></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="projectImage">
-                            <img class="project" src="./assets/images/CrystalsCollector.png">
-                            <div class=overlay>
-                                <div class="projectText">
-                                    A game where each crystal is a hidden number.
-                                    <a class="projectLink" href="https://brookemo.github.io/CrystalsCollectorGame/" target="_blank">Check it out ></a>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="githubLink" href="https://github.com/BrookeMo" target="_blank">See more on my Github</a>
                     </div>
+                    <div class="projectImage">
+                        <img class="project" src="./assets/images/AvengersAssembler.png">
+                        <div class=overlay>
+                            <div class="projectText">
+                                Website for new Avengers fans to learn more about their favorite characters.
+                                <a class="projectLink" href="https://brookemo.github.io/AvengersAssembler/" target="_blank">Check it out ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projectImage">
+                        <img class="project" src="./assets/images/StarWars.png">
+                        <div class=overlay>
+                            <div class="projectText">
+                                Star Wars Themed Hangman Game
+                                <a class="projectLink" href="https://brookemo.github.io/HangmanGame/" target="_blank">Check it out ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projectImage">
+                        <img class="project" src="./assets/images/TrainScheduler.png">
+                        <div class=overlay>
+                            <div class="projectText">
+                                A train schedule app that uses Firebase.
+                                <a class="projectLink" href="https://brookemo.github.io/FirebaseTrainScheduler/" target="_blank">Check it out ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projectImage">
+                        <img class="project" src="./assets/images/CrystalsCollector.png">
+                        <div class=overlay>
+                            <div class="projectText">
+                                A game where each crystal is a hidden number.
+                                <a class="projectLink" href="https://brookemo.github.io/CrystalsCollectorGame/" target="_blank">Check it out ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="githubLink" href="https://github.com/BrookeMo" target="_blank">See more on my Github</a>
                 </div>
             </div>
+        </div>
     </div>
 </body>
 

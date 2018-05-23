@@ -4,43 +4,42 @@
 body {
     background-image: url(../images/country-quilt.png);
 }
-.header {
-    padding: 5px 0px 8px 0px;
-    background-color: #011627;
-    margin: 0;
-}
 .title {
     font-family: 'Comfortaa', cursive;
     color: white;
     text-align: center;
     font-size: 20px;
 }
-.contact {
-    float: right;
-    background-color: #011627;
-    height: 65px;
-    width: 65px;
-    padding: 0;
-    margin: 0;
+.nav-wrapper {
+    background-color: #2D3C4B;
 }
-#bubble {
-    margin-top: 2px;
+.sidenav {
+    width: 150px;
+}
+#sidenavLogo {
+    background-color: #2D3C4B;
+    text-align: center;
+    color: white;
 }
 .name {
-    color: #011627;
+    color: #2D3C4B;
     text-align: center;
     margin: 0;
 }
 #picContainer {
     padding: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 #profilePic {
     height: 200px;
     box-shadow: 0 14px 14px 0 rgba(0,0,0,0.14), 0px 20px 20px 10px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
-    border-radius: 2px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
 }
 hr {
-    color: #011627;
+    color: #2D3C4B;
     size: 5px;
 }
 .title {
