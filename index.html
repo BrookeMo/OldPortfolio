@@ -25,30 +25,34 @@
     <nav>
         <div class="nav-wrapper">
             <a href="#" class="brand-logo logo">{bm}</a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul id="nav-mobile" class="section table-of-contents right hide-on-med-and-down">
                 <li>
-                    <a href="#">About Me</a>
+                    <a href="#aboutme">About Me</a>
                 </li>
                 <li>
-                    <a href="#">Portfolio</a>
+                    <a href="#portfolio">Portfolio</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#contactMe">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <ul class="sidenav" id="mobile-demo">
-        <li><a href="#" id="sidenavLogo" class="brand-logo logo">{bm}</a></li>
+    <ul class="sidenav section table-of-contents" id="mobile-demo">
         <li>
-            <a href="#">About Me</a>
+            <a href="#" id="sidenavLogo" class="brand-logo logo">{bm}</a>
         </li>
         <li>
-            <a href="#">Portfolio</a>
+            <a href="#aboutme">About Me</a>
         </li>
         <li>
-            <a href="#">Contact</a>
+            <a href="#portfolio">Portfolio</a>
+        </li>
+        <li>
+            <a href="#contactMe">Contact</a>
         </li>
     </ul>
     <!--Body-->
@@ -81,7 +85,7 @@
             </div>
         </div>
         <div class="row">
-            <div id="aboutMe" class="col s12">
+            <div id="aboutme" class="col s12 section scrollspy">
                 <div class="card-panel sample">
                     <h3>About Me</h3>
                     <p>After tip-toeing around computer programming for a couple of years, I finally decided to take the plunge,
@@ -160,7 +164,7 @@
             </div>
         </div>
         <div class="row">
-            <div id="contactMe" class="col s12">
+            <div id="contactMe" class="col s12 section scrollspy">
                 <div class="card-panel contactInfo">
                     <h3>Contact Me</h3>
                     <p>Feel like learning more, collaborating, or just want to get in touch?</p>
@@ -196,13 +200,20 @@
                             </a>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <ul>
+
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col s12">
-                    <h3 class='portfolio'>Portfolio</h3>
+                    <h3 id="portfolio" class='portfolio section scrollspy'>Portfolio</h3>
                     <div class="projectImage">
                         <img class="project" src="./assets/images/SK8.png">
                         <div class=overlay>
