@@ -192,3 +192,13 @@ hr {
 .skillsTitle {
     margin-bottom: 0;
 }
+.contactInfo {
+    margin-top: 5px;
+    background-color: #A24936;
+    color: white;
+    text-align: center;
+    box-shadow: 0 14px 14px 0 rgba(0,0,0,0.14), 0px 20px 20px 10px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+#contactMe {
+    padding: 0;
+}
