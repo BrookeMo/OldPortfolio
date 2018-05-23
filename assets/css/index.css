@@ -3,6 +3,12 @@
 }
 body {
     background-image: url(../images/country-quilt.png);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+  main {
+    flex: 1 0 auto;
 }
 .title {
     font-family: 'Comfortaa', cursive;
@@ -245,7 +251,8 @@ i.small.material-icons {
 #phoneNumber {
     display: none;
     text-align: center;
-    margin-top: 0;
+    margin-top: 20px;
+    margin-bottom: -15px;
 }
 i.small.material-icons#phone {
     margin: 0;
@@ -260,4 +267,16 @@ i.small.material-icons#phone {
 }
 #contactRow {
     margin-bottom: 0;
+}
+#copyright {
+    text-align: center;
+    background-color: #1C3144;
+    margin-top: 0;
+}
+#footer-copyright {
+    background-color: #1C3144;
+    padding-top: 0;
+}
+#page-footer {
+    background-color: #1C3144;
 }

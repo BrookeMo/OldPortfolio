@@ -22,260 +22,272 @@
 
 <body>
     <!--Header-->
-    <nav>
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo logo">{bm}</a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
-                <i class="material-icons">menu</i>
-            </a>
-            <ul id="nav-mobile" class="section table-of-contents right hide-on-med-and-down">
-                <li>
-                    <a href="#aboutme">About Me</a>
-                </li>
-                <li>
-                    <a href="#mySkills">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#contactMe">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <ul class="sidenav section table-of-contents" id="mobile-demo">
-        <li>
-            <a href="#" id="sidenavLogo" class="brand-logo logo">{bm}</a>
-        </li>
-        <li>
-            <a href="#aboutme">About Me</a>
-        </li>
-        <li>
-            <a href="#mySkills">Portfolio</a>
-        </li>
-        <li>
-            <a href="#contactMe">Contact</a>
-        </li>
-    </ul>
+
+    <head>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo logo">{bm}</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul id="nav-mobile" class="section table-of-contents right hide-on-med-and-down">
+                    <li>
+                        <a href="#aboutme">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#mySkills">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contactMe">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="sidenav section table-of-contents" id="mobile-demo">
+            <li>
+                <a href="#" id="sidenavLogo" class="brand-logo logo">{bm}</a>
+            </li>
+            <li>
+                <a href="#aboutme">About Me</a>
+            </li>
+            <li>
+                <a href="#mySkills">Portfolio</a>
+            </li>
+            <li>
+                <a href="#contactMe">Contact</a>
+            </li>
+        </ul>
+    </head>
     <!--Body-->
-    <div class="body">
-        <div class='container'>
-            <div class="row">
-                <div class="col s12">
-                    <div id="Card" class="card-panel">
-                        <div id="nameRow" class="row">
-                            <div class="col s12">
-                                <h3 class='name'>Brooke Mortensen</h3>
+    <main>
+        <div class="body">
+            <div class='container'>
+                <div class="row">
+                    <div class="col s12">
+                        <div id="Card" class="card-panel">
+                            <div id="nameRow" class="row">
+                                <div class="col s12">
+                                    <h3 class='name'>Brooke Mortensen</h3>
+                                </div>
                             </div>
-                        </div>
-                        <hr>
-                        <div id="titleRow" class='row'>
-                            <div class='col s12'>
-                                <h4 class="title">Front-End Developer</h4>
-                            </div>
-                            <div class="col s12">
-                                <div id="location">
-                                    <i class="small material-icons">location_on</i>
-                                    <h6 id="slc">Salt Lake City, UT</h6>
+                            <hr>
+                            <div id="titleRow" class='row'>
+                                <div class='col s12'>
+                                    <h4 class="title">Front-End Developer</h4>
+                                </div>
+                                <div class="col s12">
+                                    <div id="location">
+                                        <i class="small material-icons">location_on</i>
+                                        <h6 id="slc">Salt Lake City, UT</h6>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div id="picContainer" class="col s12">
+                            <img id="profilePic" src="./assets/images/ProfilePicture.jpg">
+                        </div>
                     </div>
-                    <div id="picContainer" class="col s12">
-                        <img id="profilePic" src="./assets/images/ProfilePicture.jpg">
+                </div>
+                <div id="compRow" class="row">
+                    <div class="col s12 computer">
+                        <img id="computer" src="./assets/images/code.png">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="aboutme" class="col s12 section scrollspy">
+                    <div class="card-panel sample">
+                        <h3>About Me</h3>
+                        <p>After tip-toeing around computer programming for a couple of years, I finally decided to take the
+                            plunge, and immersed myself in frontend development, learning the newest languages and technologies.
+                            I've developed a passion for making user-friendly, clean, and fun applications. I'm consistently
+                            looking for new things to try and fun ideas to implement.
+                        </p>
                     </div>
                 </div>
             </div>
             <div id="compRow" class="row">
                 <div class="col s12 computer">
-                    <img id="computer" src="./assets/images/code.png">
+                    <img id="computer" src="./assets/images/typing.png">
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div id="aboutme" class="col s12 section scrollspy">
-                <div class="card-panel sample">
-                    <h3>About Me</h3>
-                    <p>After tip-toeing around computer programming for a couple of years, I finally decided to take the plunge,
-                        and immersed myself in frontend development, learning the newest languages and technologies. I've
-                        developed a passion for making user-friendly, clean, and fun applications. I'm consistently looking
-                        for new things to try and fun ideas to implement.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div id="compRow" class="row">
-            <div class="col s12 computer">
-                <img id="computer" src="./assets/images/typing.png">
-            </div>
-        </div>
 
-        <div class="row">
-            <div id="mySkills" class="col s12 section scrollspy">
-                <div class="card-panel skills">
-                    <div class='row skillsTitle'>
-                        <h3>My Skills</h3>
-                        <div class="col s4">
-                            <h6>Languages</h6>
-                        </div>
-                        <div class="col s4">
-                            <h6>Libraries/ Frameworks</h6>
-                        </div>
-                        <div class="col s4">
-                            <h6>Other Tools</h6>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s4">
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>Javascript</li>
-                                <li>JSON</li>
-                                <li>AJAX</li>
-                                <li>Markdown</li>
-                                <li>SQL</li>
-                                <li>Handlebars</li>
-                            </ul>
-                        </div>
-                        <div class="col s4">
-                            <ul>
-                                <li>jQuery</li>
-                                <li>Bootstrap</li>
-                                <li>Materialize</li>
-                                <li>Foundation</li>
-                                <li>Bulma</li>
-                                <li>mySQL</li>
-                                <li>node.js</li>
-                                <li>Google's APIs</li>
-                            </ul>
-                        </div>
-                        <div class="col s4">
-                            <ul>
-                                <li>Github</li>
-                                <li>Heroku</li>
-                                <li>Xcode</li>
-                                <li>Terminal</li>
-                                <li>Sketch</li>
-                                <li>Postman</li>
-                                <li>Firebase</li>
-                                <li>Slack</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s12">
-                            <a id="show" class="showPortfolio btn waves-effect">Portfolio</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container myPortfolio">
             <div class="row">
-                <div class="col s12">
-                    <h3 id="portfolio" class='portfolio'>Portfolio</h3>
-                    <div class="projectImage">
-                        <img class="project" src="./assets/images/SK8.png">
-                        <div class=overlay>
-                            <div class="projectText">
-                                App for skateboarders to post and see tricks performed in their area
-                                <a class="projectLink" href="https://stark-savannah-69359.herokuapp.com/" target="_blank">Check it out ></a>
+                <div id="mySkills" class="col s12 section scrollspy">
+                    <div class="card-panel skills">
+                        <div class='row skillsTitle'>
+                            <h3>My Skills</h3>
+                            <div class="col s4">
+                                <h6>Languages</h6>
+                            </div>
+                            <div class="col s4">
+                                <h6>Libraries/ Frameworks</h6>
+                            </div>
+                            <div class="col s4">
+                                <h6>Other Tools</h6>
                             </div>
                         </div>
-                    </div>
-                    <div class="projectImage">
-                        <img class="project" src="./assets/images/AvengersAssembler.png">
-                        <div class=overlay>
-                            <div class="projectText">
-                                Website for new Avengers fans to learn more about their favorite characters.
-                                <a class="projectLink" href="https://brookemo.github.io/AvengersAssembler/" target="_blank">Check it out ></a>
+                        <div class="row">
+                            <div class="col s4">
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                    <li>JSON</li>
+                                    <li>AJAX</li>
+                                    <li>Markdown</li>
+                                    <li>SQL</li>
+                                    <li>Handlebars</li>
+                                </ul>
+                            </div>
+                            <div class="col s4">
+                                <ul>
+                                    <li>jQuery</li>
+                                    <li>Bootstrap</li>
+                                    <li>Materialize</li>
+                                    <li>Foundation</li>
+                                    <li>Bulma</li>
+                                    <li>mySQL</li>
+                                    <li>node.js</li>
+                                    <li>Google's APIs</li>
+                                </ul>
+                            </div>
+                            <div class="col s4">
+                                <ul>
+                                    <li>Github</li>
+                                    <li>Heroku</li>
+                                    <li>Xcode</li>
+                                    <li>Terminal</li>
+                                    <li>Sketch</li>
+                                    <li>Postman</li>
+                                    <li>Firebase</li>
+                                    <li>Slack</li>
+                                </ul>
                             </div>
                         </div>
-                    </div>
-                    <div class="projectImage">
-                        <img class="project" src="./assets/images/StarWars.png">
-                        <div class=overlay>
-                            <div class="projectText">
-                                Star Wars Themed Hangman Game
-                                <a class="projectLink" href="https://brookemo.github.io/HangmanGame/" target="_blank">Check it out ></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projectImage">
-                        <img class="project" src="./assets/images/TrainScheduler.png">
-                        <div class=overlay>
-                            <div class="projectText">
-                                A train schedule app that uses Firebase.
-                                <a class="projectLink" href="https://brookemo.github.io/FirebaseTrainScheduler/" target="_blank">Check it out ></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projectImage">
-                        <img class="project" src="./assets/images/CrystalsCollector.png">
-                        <div class=overlay>
-                            <div class="projectText">
-                                A game where each crystal is a hidden number.
-                                <a class="projectLink" href="https://brookemo.github.io/CrystalsCollectorGame/" target="_blank">Check it out ></a>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="githubLink btn waves-effect" href="https://github.com/BrookeMo" target="_blank">See more on my Github</a>
-                </div>
-            </div>
-        </div>
-        <div id="compRow" class="row">
-            <div class="col s12 computer">
-                <img id="computer" src="./assets/images/phone.png">
-            </div>
-        </div>
-        <div class="row">
-            <div id="contactMe" class="col s12 section scrollspy">
-                <div class="card-panel contactInfo">
-                    <h3>Contact Me</h3>
-                    <p>Feel like learning more, collaborating, or just want to get in touch?</p>
-                    <div id="contactRow" class="row">
-                        <div class="col s2">
-                            <a href="https://github.com/BrookeMo" target="_blank">
-                                <img src="./assets/images/Github.png">
-                            </a>
-                        </div>
-                        <div class="col s2">
-                            <a href="https://stackoverflow.com/users/9147503/brooke-mortensen" target="_blank">
-                                <img src="./assets/images/stackoverflow.png">
-                            </a>
-                        </div>
-                        <div class="col s2">
-                            <a href="https://www.linkedin.com/in/brookemortensen/" target="_blank">
-                                <img src="./assets/images/linkedin.png">
-                            </a>
-                        </div>
-                        <div class="col s2">
-                            <a href="https://twitter.com/BrookeAmyMo" target="_blank">
-                                <img src="./assets/images/twitter.png">
-                            </a>
-                        </div>
-                        <div class="col s2">
-                            <a>
-                                <img src="./assets/images/email.png">
-                            </a>
-                        </div>
-                        <div class="col s2">
-                            <a href="tel:1-801-556-6803" target="_blank">
-                                <img src="./assets/images/text.png">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s12">
-                            <div id="phoneNumber">
-                                <i id="phone" class="small material-icons">phone</i>
-                                <h6 id="number">801-556-6803</h6>
+                        <div class="row">
+                            <div class="col s12">
+                                <a id="show" class="showPortfolio btn waves-effect">Portfolio</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="container myPortfolio">
+                <div class="row">
+                    <div class="col s12">
+                        <h3 id="portfolio" class='portfolio'>Portfolio</h3>
+                        <div class="projectImage">
+                            <img class="project" src="./assets/images/SK8.png">
+                            <div class=overlay>
+                                <div class="projectText">
+                                    App for skateboarders to post and see tricks performed in their area
+                                    <a class="projectLink" href="https://stark-savannah-69359.herokuapp.com/" target="_blank">Check it out ></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projectImage">
+                            <img class="project" src="./assets/images/AvengersAssembler.png">
+                            <div class=overlay>
+                                <div class="projectText">
+                                    Website for new Avengers fans to learn more about their favorite characters.
+                                    <a class="projectLink" href="https://brookemo.github.io/AvengersAssembler/" target="_blank">Check it out ></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projectImage">
+                            <img class="project" src="./assets/images/StarWars.png">
+                            <div class=overlay>
+                                <div class="projectText">
+                                    Star Wars Themed Hangman Game
+                                    <a class="projectLink" href="https://brookemo.github.io/HangmanGame/" target="_blank">Check it out ></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projectImage">
+                            <img class="project" src="./assets/images/TrainScheduler.png">
+                            <div class=overlay>
+                                <div class="projectText">
+                                    A train schedule app that uses Firebase.
+                                    <a class="projectLink" href="https://brookemo.github.io/FirebaseTrainScheduler/" target="_blank">Check it out ></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projectImage">
+                            <img class="project" src="./assets/images/CrystalsCollector.png">
+                            <div class=overlay>
+                                <div class="projectText">
+                                    A game where each crystal is a hidden number.
+                                    <a class="projectLink" href="https://brookemo.github.io/CrystalsCollectorGame/" target="_blank">Check it out ></a>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="githubLink btn waves-effect" href="https://github.com/BrookeMo" target="_blank">See more on my Github</a>
+                    </div>
+                </div>
+            </div>
+            <div id="compRow" class="row">
+                <div class="col s12 computer">
+                    <img id="computer" src="./assets/images/phone.png">
+                </div>
+            </div>
+            <div class="row">
+                <div id="contactMe" class="col s12 section scrollspy">
+                    <div class="card-panel contactInfo">
+                        <h3>Contact Me</h3>
+                        <p>Feel like learning more, collaborating, or just want to get in touch?</p>
+                        <div id="contactRow" class="row">
+                            <div class="col s2">
+                                <a href="https://github.com/BrookeMo" target="_blank">
+                                    <img src="./assets/images/Github.png">
+                                </a>
+                            </div>
+                            <div class="col s2">
+                                <a href="https://stackoverflow.com/users/9147503/brooke-mortensen" target="_blank">
+                                    <img src="./assets/images/stackoverflow.png">
+                                </a>
+                            </div>
+                            <div class="col s2">
+                                <a href="https://www.linkedin.com/in/brookemortensen/" target="_blank">
+                                    <img src="./assets/images/linkedin.png">
+                                </a>
+                            </div>
+                            <div class="col s2">
+                                <a href="https://twitter.com/BrookeAmyMo" target="_blank">
+                                    <img src="./assets/images/twitter.png">
+                                </a>
+                            </div>
+                            <div class="col s2">
+                                <a>
+                                    <img src="./assets/images/email.png">
+                                </a>
+                            </div>
+                            <div class="col s2">
+                                <a id="textIcon">
+                                    <img src="./assets/images/text.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <div id="phoneNumber">
+                                    <i id="phone" class="small material-icons">phone</i>
+                                    <h6 id="number">801-556-6803</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </main>
+    <footer id="page-footer" class="page-footer">
+        <div id="footer-copyright" class="footer-copyright">
+            <div id="copyright" class="container">
+                © 2018 BROOKE MORTENSEN
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
