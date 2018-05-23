@@ -280,3 +280,64 @@ i.small.material-icons#phone {
 #page-footer {
     background-color: #1C3144;
 }
+#form {
+    margin-bottom: 15px;
+    display: none;
+}
+.contactFormTitle {
+    text-align: center;
+    color: #A24936;
+}
+#myEmail {
+    margin-top: 0;
+}
+#submit {
+    font-family: 'Comfortaa', cursive;
+}
+.submitForm {
+    background-color: white;
+    color: #A24936;
+    text-align: center;
+    padding: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 130px;
+    box-shadow: 0 14px 14px 0 rgba(0,0,0,0.14), 0px 20px 20px 10px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    border-radius: 20px;
+    border: #A24936 solid;
+    text-transform: none;
+    height: 45px;
+    line-height: 21px;
+}
+.submitForm:hover {
+    background-color: #A24936;
+    color: white;
+}
+/* label color */
+.input-field label {
+    color: #A24936;
+  }
+  /* label focus color */
+  .input-field input[type=text]:not(.browser-default):focus:not([read-only]) + label {
+    color: #A24936;
+  }
+  .input-field input[type=email]:not(.browser-default):focus:not([read-only]) + label {
+    color: #A24936;
+  }
+textarea.materialize-textarea:focus:not([read-only]) + label {
+    color: #A24936;
+}
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid #A24936;
+    box-shadow: 0 1px 0 0 #A24936;
+  }
+  .prefix {
+    color: #A24936;
+  }
+.input-field.prefix.active {
+      color: black;
+  }
