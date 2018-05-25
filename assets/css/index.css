@@ -23,6 +23,9 @@ main {
     font-size: 25px;
     margin: 0;
 }
+.table-of-contents a.active {
+    border-left: #5C723A;
+}
 .table-of-contents a:hover {
     border-left: white;
 }
