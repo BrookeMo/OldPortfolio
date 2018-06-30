@@ -352,6 +352,7 @@ i.small.material-icons {
 }
 #contactRow {
     margin-bottom: 0;
+    margin-top: 60px;
 }
 #phoneNumber {
     display: none;
@@ -446,4 +447,17 @@ textarea.materialize-textarea:focus:not([read-only]) + label {
     text-align: center;
     background-color: #474747;
     margin-top: 0;
+}
+.mainsection {
+    height: 500px;
+}
+#aboutmetext {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+#contactmetext {
+    margin: 35px 0;
+}
+.contactcolumns {
+    margin-top: 25px;
 }
